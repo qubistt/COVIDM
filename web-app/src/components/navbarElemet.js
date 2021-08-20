@@ -13,15 +13,16 @@ const navbar = () => {
 
 
 
-<Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" >
+<Navbar collapseOnSelect expand="lg" bg="primary" variant="dark" >
 
-<img
+{/* <img
           alt=""
-          src="https://d3n8a8pro7vhmx.cloudfront.net/gratafund/pages/274/attachments/original/1589869845/COVID_LAW_MONITOR_logo_germ.png?1589869845"
+          // src="https://d3n8a8pro7vhmx.cloudfront.net/gratafund/pages/274/attachments/original/1589869845/COVID_LAW_MONITOR_logo_germ.png?1589869845"
+          // uhh the the logo is too kringe gotta work on this.... 😒
           width="30"
           height="30"
           className="d-inline-block align-top"
-        />
+        /> */}
 
        
                 <Navbar.Brand href="#home">Covidm</Navbar.Brand>
