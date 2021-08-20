@@ -13,7 +13,7 @@ const navbar = () => {
 
 
 
-<Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+<Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" >
 
 <img
           alt=""
@@ -28,8 +28,8 @@ const navbar = () => {
 
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
-                  <Nav>
-                        <Nav.Link href="#about" >About</Nav.Link>
+                  <Nav  className="ms-auto">
+                        <Nav.Link href="#about"  >About</Nav.Link>
                         <Nav.Link eventKey={2} href="#about">
                         
                         </Nav.Link>
