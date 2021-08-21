@@ -2,8 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './components/navbarElemet';
-import Header from './pages/header'
+import header from './pages/header'
 import * as firebase from 'firebase'
+import Login from './pages/Login'
 
 
 
@@ -15,10 +16,11 @@ function App() {
 
     <Router>
 {/* Using the imported file from the compoenets */}
-      <Navbar />
+      {/* <Navbar />
       <Header />
- 
-      
+       */}
+
+       <Route  exact path="/login" component={Login}/>
       
 
 

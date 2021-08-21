@@ -4,7 +4,8 @@
 import fonts from '../assets/fonts.css'
 import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, Move, MoveIn, MoveOut, Sticky, StickyIn, ZoomIn } from "react-scroll-motion";
 import Button from 'react-bootstrap/Button'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
+
 
 
 
@@ -18,13 +19,13 @@ const header = () => {
     const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
     const FadeUp = batch(Fade(), Move(), Sticky());
 
-        
+    let history = useHistory;
   
     return (
         // Css pro animations lol
         <>
 
-        <Router>
+  
 
  <ScrollContainer>
       <ScrollPage page={0}>
@@ -64,12 +65,14 @@ const header = () => {
       </ScrollPage>
     </ScrollContainer>
 
-    <button />
-    
+<button
+onClick={() =>{
+    history.push("./Search_bar");
+}}>GO!</button>
 
 
 
-    </Router>
+
 
   
 
