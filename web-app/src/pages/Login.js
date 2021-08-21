@@ -5,7 +5,7 @@ function Login (){
     return(
         <div>
               <h1>Welcome to the login Page!</h1>
-              <button onClick= {() => (history.push('./header')
+              <button onClick= {() => (history.push('./profile')
               )}>Login.</button>
 
         </div>

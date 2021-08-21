@@ -4,3 +4,5 @@ function profile (){
         <h1>the profile pg bruhhh am tired of this shit noww</h1>
     )
 }
+
+export default profile;
