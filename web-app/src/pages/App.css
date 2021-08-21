@@ -1,3 +1,9 @@
 .Main{
-    font-family: 'Noto Sans JP', sans-serif;
+    margin-left: px;
+    font-size: 4rem;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 4.3rem;
 }
+
