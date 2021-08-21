@@ -9,9 +9,13 @@ import fonts from '../assets/fonts.css'
 const header = () => {
     return (
         <>
-        <div className="header">
+        <div className="scroll-container">
         <img className="img1"  src={head} />
+        <div classname="scroll-text">
         <h1 className="Main">Covidm</h1>
+
+        </div>
+        
 
 
 
