@@ -1,7 +1,15 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Header from './header'
+
+
+
 function profile (){
     return(
-        <h1>the profile pg bruhhh am tired of this shit noww</h1>
+        <Router>
+            <Header />
+
+        </Router>
     )
 }
 
