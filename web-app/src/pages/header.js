@@ -1,18 +1,31 @@
 // import React from "react";
-// import './App.css';
+ import './App.css';
 // import head from './header_img_covid_photo_pea.png'
-// import fonts from '../assets/fonts.css'
+import fonts from '../assets/fonts.css'
 import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, Move, MoveIn, MoveOut, Sticky, StickyIn, ZoomIn } from "react-scroll-motion";
+import Button from 'react-bootstrap/Button'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+
+
+
 
 
 
 
 const header = () => {
+
     const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
     const FadeUp = batch(Fade(), Move(), Sticky());
+
+        
   
     return (
+        // Css pro animations lol
         <>
+
+        <Router>
+
  <ScrollContainer>
       <ScrollPage page={0}>
         <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>
@@ -23,33 +36,41 @@ const header = () => {
       </ScrollPage>
       <ScrollPage page={1}>
         <Animator animation={ZoomInScrollOut}>
-          <span style={{ fontSize: "3em" }}>I'm FadeUpScrollOut ✨</span>
+          <span style={{ fontSize: "3em" }}>the only app needed for you to fight the virus</span>
         </Animator>
       </ScrollPage>
       <ScrollPage page={2}>
         <Animator animation={FadeUp}>
-          <span style={{ fontSize: "3em" }}>I'm FadeUp ⛅️</span>
+          <span style={{ fontSize: "3em" }}>Find</span>
         </Animator>
       </ScrollPage>
       <ScrollPage page={3}>
-        <div>
+        <div className="Sub-heading">
           <span style={{ fontSize: "3em" }}>
-            <Animator animation={MoveIn(-1000, 0)}>Hello Guys 👋🏻</Animator>
-            <Animator animation={MoveIn(1000, 0)}>Nice to meet you 🙋🏻‍♀️</Animator>- I'm Seonghyeok -
-            <Animator animation={MoveOut(1000, 0)}>Good bye ✋🏻</Animator>
-            <Animator animation={MoveOut(-1000, 0)}>See you 💛</Animator>
+            <Animator animation={MoveIn(-1000, 0)}>Beds</Animator>
+            <Animator animation={MoveIn(1000, 0)}>hospitals</Animator>
+            <Animator animation={MoveOut(1000, 0)}>Food</Animator>
+            <Animator animation={MoveOut(-1000, 0)}>doctors</Animator>
           </span>
         </div>
       </ScrollPage>
       <ScrollPage page={4}>
         <Animator animation={batch(Fade(), Sticky())}>
-          <span style={{ fontSize: "3em" }}>Done</span>
+          <span style={{ fontSize: "3em" }}></span>
           <span style={{ fontSize: "3em" }}>
-            There's FadeAnimation, MoveAnimation, StickyAnimation, ZoomAnimation
+            Stay safe and healthy
           </span>
         </Animator>
       </ScrollPage>
     </ScrollContainer>
+
+    <button />
+    
+
+
+
+    </Router>
+
   
 
 

@@ -17,6 +17,7 @@ function App() {
 {/* Using the imported file from the compoenets */}
       <Navbar />
       <Header />
+ 
       
       
 
